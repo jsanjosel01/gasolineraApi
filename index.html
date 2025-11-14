@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang='es'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <link rel='stylesheet' href='style.css'> 
+    <script type="module" src='script.js' defer></script>
+
+    <title>gasolineraApi</title>
+</head>
+<body>
+
+   <h1>Api de Gasolinera</h1>
+
+  <main>
+    <!-- Panel -->  
+    <section id="search-panel">
+      <!-- Provincia -->
+      <label> Provincia: </label>
+      <select name="provincias" id="provincias">
+        <option selected disabled>--Seleccionar--</option>
+      </select>
+      <!-- Municipio -->
+      <label> Municipio: </label>
+      <select name="municipios" id="municipios">
+        <option selected disabled>--Seleccionar--</option>
+      </select>
+
+      <!-- Combustible -->
+      <label> Tipo de combustible: </label>
+      <select name="combustibles" id="combustibles">
+        <option selected disabled>--Seleccionar--</option>
+      </select>
+
+      <!-- Gasolineras abriertas -->
+      <div>
+        <input type="checkbox" name="open" id="open">
+        <label> Gasolineras que están abiertas: </label>
+      </div>
+
+      <!-- btn buscar gasolinera -->
+      <button id="buscar" disabled>Buscar</button>
+
+    </section>
+    <section id="gasolineras"></section>
+
+  </main>
+
+
+</body>
+</html>
+
