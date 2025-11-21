@@ -22,3 +22,7 @@ addMunicipios(municipiosOpcionesElement)
 let combustiblesElement = document.getElementById('combustibles')
 let combustiblesOpcionesElement = document.getElementById('combustibles')
 addCombustibles(combustiblesOpcionesElement)
+
+// Gasolineras 
+let gasolinerasElement = document.getElementById('gasolineras')
+let openElement = document.getElementById('open') // ABIERTAS

@@ -6,3 +6,9 @@ export const urlMunicipiosParcial = 'https://sedeaplicaciones.minetur.gob.es/Ser
 
 // Listados tipos de combustible 
 export const urlCombustiblesParcial = 'https://sedeaplicaciones.minetur.gob.es/ServiciosRESTCarburantes/PreciosCarburantes/Listados/ProductosPetroliferos/'
+
+// Gasolineras => EstacionesTerrestres/FiltroMunicipioProducto/{IDMunicipio}/{IDProducto}
+export const urlGasolinerasParcial = 'https://sedeaplicaciones.minetur.gob.es/ServiciosRESTCarburantes/PreciosCarburantes/EstacionesTerrestres/FiltroMunicipioProducto/'
+
+// Gasolineras => EstacionesTerrestresHist/FiltroMunicipioProducto/{FECHA}/{IDMunicipio}/{IDProducto}
+export const urlGasolinerasFechaParcial = 'https://sedeaplicaciones.minetur.gob.es/ServiciosRESTCarburantes/PreciosCarburantes/EstacionesTerrestresHist/FiltroMunicipioProducto/'
