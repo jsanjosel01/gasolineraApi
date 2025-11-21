@@ -1,5 +1,7 @@
 import { fetchProvincias, fetchMunicipios, fetchCombustibles, fetchGasolineras } from "./gasolinera.js";
 
+// import{intervalsOk} FALTA PONER ESTO, Y LAS FECHA
+
 // Provincia
 export async function addProvincias(node) {
     let data = await fetchProvincias()
