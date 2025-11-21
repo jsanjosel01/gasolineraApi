@@ -1,4 +1,4 @@
-import { fetchProvincias, fetchMunicipios } from "./gasolinera.js";
+import { fetchProvincias, fetchMunicipios, fetchCombustibles } from "./gasolinera.js";
 
 // Provincia
 export async function addProvincias(node) {
@@ -30,5 +30,23 @@ function renderMunicipio(municipio) {
     let optionElement = document.createElement('option')
     optionElement.value = municipio.IDMunicipio
     optionElement.innerText = municipio.Municipio
+    return optionElement
+}
+
+
+// Tipo de combustibles
+
+export async function addCombustibles(node) {
+    let data = await fetchCombustibles()
+    node.innerHTML = '<option selected disabled>Seleccione un tipo de combustible</option>'
+    data.forEach(e => {
+        node.append(renderCombustible(e))
+    });
+}
+
+function renderCombustible(combustible) {
+    let optionElement = document.createElement('option')
+    optionElement.value = combustible.IDProducto
+    optionElement.innerText = combustible.NombreProducto
     return optionElement
 }
