@@ -1,6 +1,5 @@
 import { fetchProvincias, fetchMunicipios, fetchCombustibles, fetchGasolineras } from "./gasolinera.js";
-
-// import{intervalsOk} FALTA PONER ESTO, Y LAS FECHA
+import { intervalsOk } from "./fecha.js";
 
 // Provincia
 export async function addProvincias(node) {
@@ -81,7 +80,7 @@ function renderGasolinera(gasolinera, fecha) {
     let gasolineraElement = document.createElement('div')
     gasolineraElement.classList.add('gasolinera')
     gasolineraElement.innerHTML = `
-        <div class="gasolinera-nombre">Núm Gasolinera: ${gasolinera.IDEESS}, ${gasolinera.Rótulo}</div>
+        <div class="gasolinera-nombre"> Núm Gasolinera: ${gasolinera.IDEESS}, ${gasolinera.Rótulo}</div>
         <div class="gasolinera-direccion">Dirección: ${gasolinera.Dirección}</div>
         <div class="gasolinera-localidad">Localidad: ${gasolinera.Localidad}</div>
         <div class="gasolinera-provincia ">Provincia: ${gasolinera.Provincia}</div>
