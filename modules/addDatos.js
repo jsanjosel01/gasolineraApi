@@ -19,7 +19,7 @@ function renderProvincia(provincia) {
 }
 
 
-//  Municipio 
+// Municipio 
 export async function addMunicipios(node, IDPovincia) {
     let data = await fetchMunicipios(IDPovincia)
     node.innerHTML = '<option selected disabled>Seleccione un municipio</option>'
