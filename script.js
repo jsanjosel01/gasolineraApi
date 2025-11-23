@@ -32,7 +32,6 @@ let gasolinerasElement = document.getElementById('gasolineras')
 let openElement = document.getElementById('open') // ABIERTAS
 
 
-
 // Event listeners, cuando se cambia un valor en el checkbox
 // Provincias
 provinciasElement.addEventListener('change', () => {

@@ -66,12 +66,13 @@ export async function addGasolineras(node, IDMunicipio, IDProducto, open) {
             if (open && !intervalsOk(now, e.Horario)) {
                 console.log('Gasolinera cerrada')
             } else {
-                console.log('Gasolinera')
+                console.log('Gasolineras')
                 node.append(renderGasolinera(e, now))
             }
         })
     } else {
         node.innerHTML = '<div class=\'cargando\'>No hay resultados</div>'
+        
     }
 }
 
